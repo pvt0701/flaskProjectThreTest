@@ -11,7 +11,7 @@ load_dotenv()
 app.config['SQLALCHEMY_DATABASE_URI'] = (
     f'postgresql+psycopg2://{os.getenv("POSTGRES_USER")}:' +
     f'{os.getenv("POSTGRES_PW")}@' +
-    f'{os.getenv("POSTGRES_HOST")}/' +
+    f'{os.getenv("POSTGRES_URL")}/' +
     f'{os.getenv("POSTGRES_DB")}'
 )
 
