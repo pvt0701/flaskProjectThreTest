@@ -15,6 +15,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = (
     f'{os.getenv("POSTGRES_DB")}'
 )
 
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
