@@ -3,7 +3,7 @@ FROM python:3.8-slim
 # -- to install python package psycopg2 (for postgres) -- #
 RUN apt-get update
 RUN apt-get install -y postgresql libpq-dev postgresql-client postgresql-client-common gcc
-RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install apt-utils
+#RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install apt-utils
 
 # add user (change to whatever you want)
 # prevents running sudo commands
@@ -47,7 +47,7 @@ RUN pip install --no-cache-dir -r ./requirements.txt --user
 #
 COPY . /app
 WORKDIR /app
-EXPOSE 80
+#EXPOSE 80
 
 # start web server
 CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app", "--workers=5"]
