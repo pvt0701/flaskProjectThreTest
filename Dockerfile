@@ -18,7 +18,7 @@ USER pavlo
 
 # set app config option
 ENV FLASK_ENV=production
-
+#
 # set argument vars in docker-run command
 ARG AWS_ACCESS_KEY_ID
 ARG AWS_SECRET_ACCESS_KEY
