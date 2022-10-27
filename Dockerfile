@@ -3,6 +3,7 @@ FROM python:3.8-slim
 # -- to install python package psycopg2 (for postgres) -- #
 RUN apt-get update
 RUN apt-get install -y postgresql libpq-dev postgresql-client postgresql-client-common gcc
+RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install apt-utils
 
 # add user (change to whatever you want)
 # prevents running sudo commands
