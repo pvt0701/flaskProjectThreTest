@@ -9,6 +9,7 @@ resource "aws_ecs_service" "default" {
     target_group_arn = aws_alb_target_group.default.arn
     container_name   = "app"
     container_port   = 5000
+
   }
 
   name            = "blog"

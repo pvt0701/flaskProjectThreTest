@@ -11,4 +11,5 @@ resource "aws_db_instance" "default" {
   password             = "postgres"
   username             = "postgres"
   skip_final_snapshot = true
+  depends_on = [aws_db_subnet_group.default]
 }

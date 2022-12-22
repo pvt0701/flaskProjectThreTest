@@ -4,15 +4,11 @@ resource "aws_alb_target_group" "default" {
   }
 
   name     = "alb-target-group"
-  port     = 80
+  port     = 5000
   protocol = "HTTP"
 
   stickiness {
     type = "lb_cookie"
-  }
-  lifecycle {
-    create_before_destroy = true
-    ignore_changes        = [name]
   }
 
   vpc_id = aws_vpc.default.id
