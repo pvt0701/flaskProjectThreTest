@@ -4,7 +4,7 @@ resource "aws_alb_target_group" "default" {
   }
 
   name     = "alb-target-group"
-  port     = 5000
+  port     = 80
   protocol = "HTTP"
 
   stickiness {

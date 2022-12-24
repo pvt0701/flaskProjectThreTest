@@ -15,19 +15,6 @@ resource "aws_security_group" "alb" {
     to_port     = 80
   }
 
-    ingress {
-    cidr_blocks = ["0.0.0.0/0"]
-    from_port   = 5000
-    protocol    = "tcp"
-    to_port     = 5000
-  }
-
-  ingress {
-    cidr_blocks = ["0.0.0.0/0"]
-    from_port = 0
-    protocol  = "tcp"
-    to_port   = 65535
-  }
 
 
   name = "security-group--alb"
