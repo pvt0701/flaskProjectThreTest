@@ -1,6 +1,6 @@
 resource "aws_ecs_service" "default" {
   cluster                 = aws_ecs_cluster.production.id
-  depends_on              = [aws_iam_role_policy_attachment.ecs]
+  depends_on              = [aws_iam_role_policy_attachment.ecs, aws_iam_role_policy_attachment.ssm]
   desired_count           = 1
   enable_ecs_managed_tags = true
   force_new_deployment    = true
