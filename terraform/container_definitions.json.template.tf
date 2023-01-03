@@ -10,5 +10,4 @@ data "template_file" "container_definitions" {
 #    POSTGRES_USER = var.POSTGRES_USER
     account_id = data.aws_ssm_parameter.container_definitions__account_id.value
   }
-  depends_on = [aws_ssm_parameter.container_definitions__account_id]
 }
