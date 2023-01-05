@@ -4,6 +4,18 @@ A complete guide of how to setup AWS ECS With Terraform from the flask.
 
 
 ## Setup
+Create .env file:
+
+```sh
+AWS_ACCESS_KEY_ID=" "
+AWS_SECRET_ACCESS_KEY=" "
+AWS_DEFAULT_REGION=" "
+POSTGRES_USER=" "
+POSTGRES_PW=" "
+POSTGRES_HOST=" "
+POSTGRES_DB=" "
+
+```
 
 Initiate the Terraform workspace:
 
