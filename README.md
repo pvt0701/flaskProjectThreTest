@@ -33,7 +33,13 @@ terraform apply -target=aws_ecr_repository.default
 Generate the app image and upload it:
 
 ```sh
-ACCOUNT_ID=... AWS_PROFILE=blog REGION=us-east-1 REPOSITORY=blog TAG=v0.1.0 ../release.sh
+ACCOUNT_ID=YOUR_ACCOUNT_ID \
+REGION=us-west-2 \
+REPOSITORY=YOUR_REPOSITORY \
+ECR_URL=YOUR_URL \
+TAG=v0.1.0 \
+bash release.sh
+
 ```
 
 Create the SSM Parameter variables:
