@@ -42,6 +42,7 @@ POSTGRES_DB=" "
 Initiate the Terraform workspace:
 
 ```sh
+cd terraform
 terraform init
 terraform workspace new production
 ```
