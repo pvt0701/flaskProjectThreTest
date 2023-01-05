@@ -26,6 +26,11 @@ Sets up the following AWS infrastructure:
 
 
 ## Setup
+
+Install Terraform
+
+Sign up for an AWS account
+
 Create .env file:
 
 ```sh
