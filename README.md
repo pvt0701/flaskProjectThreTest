@@ -16,12 +16,13 @@ Sets up the following AWS infrastructure:
 - Load Balancers, Listeners, and Target Groups
 - IAM Roles and Policies
 - ECS:
-    - Task Definition (with multiple containers)
+    - Task Definition
     - Cluster
     - Service
 - Launch Config and Auto Scaling Group
 - RDS
 - Health Checks and Logs
+- CloudWatch
 
 
 ## Setup
