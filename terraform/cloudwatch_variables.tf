@@ -13,13 +13,13 @@ variable "response_time_threshold" {
 
 variable "unhealthy_hosts_threshold" {
   type        = string
-  default     = "1"
+  default     = "0"
   description = "The number of unhealthy hosts."
 }
 
 variable "healthy_hosts_threshold" {
   type        = string
-  default     = "0"
+  default     = "1"
   description = "The number of healthy hosts."
 }
 
@@ -31,6 +31,6 @@ variable "evaluation_period" {
 
 variable "statistic_period" {
   type        = string
-  default     = "60"
+  default     = "120"
   description = "The number of seconds that make each statistic period."
 }
