@@ -3,6 +3,10 @@
 A complete guide of how to setup AWS ECS With Terraform from the flask.
 
 
+![aws-my](https://user-images.githubusercontent.com/107927004/211269042-a0442fce-29d4-46f0-91a0-8139a0492154.jpg)
+
+
+
 
 Sets up the following AWS infrastructure:
 
