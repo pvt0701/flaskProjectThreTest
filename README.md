@@ -3,7 +3,8 @@
 A complete guide of how to setup AWS ECS With Terraform from the flask.
 
 
-![aws-architecture](https://user-images.githubusercontent.com/107927004/211268644-412d7e0b-2bfa-45b8-be41-1e262b934019.png)
+![aws-my](https://user-images.githubusercontent.com/107927004/211269042-a0442fce-29d4-46f0-91a0-8139a0492154.jpg)
+
 
 
 
